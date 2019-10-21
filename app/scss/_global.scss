@@ -1,0 +1,113 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+}
+html,
+body{
+    height: 100%;
+    position: relative;
+    overflow-x: hidden; 
+}
+.container-fluid{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+}    
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+}
+// .wrapper{
+//     display: flex;
+//     flex-direction: column;
+//     min-height: 100%;
+// }
+// .content{
+//     flex: 1 0 auto;
+// }
+ul,
+li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    line-height: 24px;
+    font-size: 14px;
+}
+img {
+    display: block;
+}
+.d-flex {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.align-items-center {
+    align-items: center;
+
+}
+h1{
+    font-size: 60px;
+}
+h1, h3, h4{
+    color: #fff;
+    @include f800;
+    font-family: 'Fira Sans', sans-serif;
+}
+h3{
+    font-size: 80px;
+    line-height: 24px;
+}
+h4{
+    font-size: 40px;
+}
+h5{
+    font-size: 22px;
+}
+input,
+select,
+textarea{
+    outline: none;
+    cursor: pointer;
+    border-radius: 0px;
+    resize: none;
+}
+// a,
+// button,
+// input{
+//     transition: all 1s ease;
+//     cursor: pointer;
+// }
+a,
+button:focus,
+select:focus {
+	box-shadow: none;
+	outline: none;
+}
+
+button:not(:disabled) {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    
+}
