@@ -1,10 +1,163 @@
 @import 'vars';
-@import 'libs';
 @import 'fonts';
 @import 'global';
 
 
+.header__title{
+    font-size: 200px;
+    margin-top: 0;
+    @include f800;
+    text-transform: uppercase;
+    color: #FFF;
+    opacity: 0.07;
+    max-width: 467px;
+    line-height: 156px;
+    position: absolute;
+    top: 0;
+    left: -0.97%;
+    z-index: 6;
+}
+.header__aside{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 1;
+    border-right: 1px solid rgba(#fff, 0.7);
+    text-align: center;
+}
+.menu__bar{
+    margin-top: 88px;
+    &-link{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 30px;
+        span{
+            color: #fff;
+            font-size: 12px;
+            @include f500;
+            line-height: 14px;
+            margin-top: 6px;
+            letter-spacing: 3px;
+            display: block;
+        }
+    }
+}
+.header{
+    &__search{
+        margin-top: 35px;
+    }
+    &__calendar{
+        color: #fff;
+        text-align: center;
+        margin-top: 30px;
+        &-date{
+            font-size: 72px;
+            line-height: 64px;
+            @include f800;
+        }
+        span{
+            font-size: 14px;
+            @include f300;
+            line-height: 19px;
+            opacity: 0.9;
+            letter-spacing: 1.4px;
+            margin-top: 6px;
+        }
+    }
+    &__location{
+        display: inline-block;
+        font-size: 12px;
+        @include f300;
+        line-height: 14px;
+        letter-spacing: 1.05px;
+        padding-left: 19px;
+        color: #fff;
+        margin-top: 30px;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 11px;
+            height: 13px;
+            background-image: url(../images/icons/map-marker.svg);
+            left: 0;
+            top: 0;
+        }
+    }
+}
+.header__slider{
+    &-item{
+        height: 100vh;  
+        background-image: url(../images/slider-bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        display: block;
+      }
+}
+.slider-item__info{
+    position: absolute;
+    text-align: right;
+    bottom: 116px;
+    right: 73px;
+    text-transform: uppercase;
+    &-title{
+        margin-bottom: 45px;
+        margin-top: 0;
+        line-height: 86px;
+    }
+    &-suptitle{
+        margin-bottom: 11px;
+    }
+    &-name{
+        font-size: 40px;
+        text-align: right;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+}
+.slider-arrow{
+    cursor: pointer;
+    position: absolute;
+    top: 40px;
+    right: 80px;
+    z-index: 5;
+    &__left{
+        right: 125px;
+    }
+}
+.slider-panels{
+    max-width: 920px;
+    width: 100%;
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+    color: #fff;
+    .slick-current{
+        .panels-box{
+            border-top: 4px solid $green;
+        }
+    }
+}
+.panels-box{
+    width: 200px;
+    height: 28px;
+    border-top: 4px solid #fff;
+    padding-top: 7px;
+    &__number{
+        font-size: 24px;
+        @include f800;
+        line-height: 30px;
+    }
+    &__name{
+        font-size: 16px;
+        @include f300;
+        line-height: 19px;
+    }
 
-
+}
 
 @import 'media';
