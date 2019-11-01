@@ -8,13 +8,14 @@
     margin-top: 0;
     @include f800;
     color: #FFF;
-    opacity: 0.07;
+    opacity: 0.2;
     max-width: 467px;
     line-height: 156px;
     position: absolute;
     top: 0;
     left: -0.97%;
-    z-index: 6;
+    z-index: 1;
+    background: transparent;
 }
 .header__scroll{
     position: absolute;
@@ -73,6 +74,9 @@
             margin-top: 6px;
             letter-spacing: 3px;
             display: block;
+        }
+        .menu__bar-link--surf{
+            margin-left: 8px;
         }
     }
 }
@@ -189,22 +193,22 @@
 // end header slider section
 // start surf section
 .surf{
+    position: relative;
     background-image: url(../images/content/location.svg);
     background-position: top 250px right 0;
     background-repeat: no-repeat;
     background-size: auto;
-    padding: 250px 0 210px;
     &__title{
         text-align: right;
         margin-right: 80px;
         transform: translateY(-46%);
         &-sub{
             @include f400;
-            opacity: 1;
+            opacity: 0.8;
         }
         &-name{
-            letter-spacing: 7px;
-            line-height: 86px;
+            letter-spacing: 0;
+            // line-height: 86px;
             span{
                 @include f300;
             }
@@ -221,12 +225,12 @@
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    max-width: 1200px;
-    min-height: 635px;
+    max-width: 1720px;
+    min-height: 910px;
     margin: 0 auto;
     position: relative;
     .slick-list{
-        min-height: 635px;
+        min-height: 910px;
     }
     .slick-current{
         .slider-dots__content{
@@ -238,7 +242,8 @@
 .slider-dots__content{
     width: 283px;
     height: 216px;
-    background: rgba(#0F1010, 0.7);
+    // background: rgba(#0F1010, 0.7);
+    background: rgba(23, 25, 25, 0.79);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 6px;
     display: none;
@@ -310,8 +315,8 @@
     position: relative;
 }
 .slider-dots--1{
-    top: 352px;
-    left: 17px;
+    top: 500px;
+    left: 37px;
     .slider-dots__content{
         transform: translateX(-12.5px);
         &:before{
@@ -320,7 +325,7 @@
     }
 }
 .slider-dots--2{
-    top: 300px;
+    top: 423px;
     .slider-dots__circle{
         position: relative;
         &::before{
@@ -330,34 +335,34 @@
         width: 14px;
         height: 16px;
         background-size: cover;
-        top: -23px;
-        right: -6px;
+        top: -25px;
+        right: -11px;
         }
     }
 }
 .slider-dots--3{
-    top: 320px;
-    left: 30px;
+    top: 469px;
+    left: 60px; 
 }
 .slider-dots--4{
-    top: 500px;
-    left: -28%;
+    top: 713px;
+    left: -24%;
 }
 .slider-dots--5{
-    top: 230px;
-    left: -42%;
+    top: 336px;
+    left: -39%;
 }
 .slider-dots--6{
-    top: 547px;
+    top: 790px;
     left: -72%;
 }
 .slider-dots--7{
-    top: 385px;
+    top: 550px;
     left: -64%;
 }
 .slider-dots--8{
-    top: 500px;
-    left: 4%;
+    top: 754px;
+    left: 15%;
     .slider-dots__content{
         transform: translateX(-141.5px);
     }
@@ -389,7 +394,7 @@
     }
     &__overlay{
         min-height: 750px;
-        background: rgba(#1C2121, 0.85);
+        background: rgba(41, 51, 51, 0.81);
         position: relative;
         &:hover{
             background: rgba(#1C2121, 0.3);
@@ -438,8 +443,224 @@
     display: none;
 }
 // end surf section
+// start travel section
+.travel{
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: auto;
+    position: relative;
+    &__slider{
+        .slider-arrow{
+        top: 260px;
+        opacity: 0.3;
+    }
+        .slider-arrow__left{
+            right: 200px;
+        }
+        .slider-arrow__right{
+            right: 160px;
+        }
+    }   
+}
 
+.title__block{
+    padding: 210px 0 0;
+    margin-top: -350px;
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: auto;
+    min-height: 377px;
+}
+.travel__slider-title{
+    text-align: right;
+    padding: 132px 160px 0 0;
+    // transform: translateY(-46%);
+    transform: translateY(0);
+}
+.travel__title{
+        &-sub {
+        @include f400;
+        padding-bottom: 8px;
+    }
+    &-name{
+        position: relative;
+        img{
+            position: absolute;
+            left: 27%;
+            top: 17%;
+        }
+    }
+}
+.content__title{
+    padding-left: 135px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+    min-height: 261px;
+}
+.travel-slider{
+    &__top{
+        background-position: top left;
+        background-repeat: no-repeat;
+        min-height: 780px;
+    }
+    &__btn{
+        text-align: center;
+        margin-top: 140px;
+    }
+    &__info{
+        justify-content: space-around;
+        position: relative;
+        &-subtitle{
+            top: 77%;
+            left: -60%;
+            color: rgba(#fff, 0.5);
+            position: absolute;
+            width: 200px;
+            text-align: right;
+        }
+        &-item{
+            min-height: 200px;
+            position: relative;
+        }
+        &-title{
+           max-width: 206px;
+            span{
+                font-size: 14px;
+                line-height: 36px;
+                letter-spacing: 6px;
+                color: rgba(#fff, 0.5);
+                font-weight: 100;
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+    }
+}
+// end travel section
+// start sleep section
+.sleep{
+    background-repeat: no-repeat;
+    background-position: bottom 5% right;
+    background-size: auto;
+    position: relative;
+    &__title-name{
+        display: flex;
+        max-width: 200px;
+    }
+}
+// end sleep section
+// start shop section
+.shop{
+    position: relative;
+    padding-top: 160px;
+}
+.shop__slider{
+    .travel-slider__content{
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: auto;
+        min-height: 590px;
+        margin: 106px 0;
+        position: relative;
+        padding-bottom: 100px;
+    }
+    .travel-slider__btn{
+        text-align: left;
+        margin-top: 0;
+    }
+    .surf__title-name{
+        max-width: 480px;
+    }
+    .title__block{
+        margin-top: 0;
+        padding: 110px 0 0;
+    }
+    .rate-star{
+        margin: 47px 0 10px;
+    }
+}
+.shop__slider{
+    .slider-arrow{
+        opacity: 0.25;
+        top: 0;
+    }
+    .shop__slider-product{
+        position: absolute;
+        left: 45%;
+        bottom:  0;
+    }
+    &-extras{
+        padding-right: 80px;
+        align-self: flex-end;
+    }
+    .shop__slider-extra{
+        text-align: center;
+    }
+    .extras{
+        font-size: 18px;
+        max-width: 160px;
+        & + .extras{
+            margin-left: 100px;
+        }
+        &__title{
+            font-size: 28px;
+            @include f800;
+            line-height: 40px;
+            margin-bottom: 25px;
+        }
+        &__name{
+            letter-spacing: 8px;
+            line-height: 22px;
+            opacity: 0.5;
+            @include f300;
+            margin-top: 36px;
+            margin-bottom: 16px;
+            max-width: 160px;
+        }
+        &__price{
+            @include f800;
+            line-height: 40px;
+        }
+    }
+}
+.surf__title-price{
+    font-size: 32px;
+    position: relative;
+    @include f800;
+    margin-bottom: 64px;
+    span{
+        font-size: 18px;
+        position: absolute;
+    }
+}
+.shop-product__image{
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-name: fadeInUp;
+    transition: all .5s cubic-bezier(0.21, 1.26, 0.35, 0.47);
+}
 
+// end shop section
+// start footer
+.footer{
+    position: relative;
+    text-align: center;
+    padding-top: 189px;
+    padding-bottom: 34px;
+    .logo{
+        margin: 0 auto;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    span{
+        font-size: 12px;
+        @include f300;
+        letter-spacing: 1.05px;
+        line-height: 14px;
+        opacity: 0.5;
+    }
+}
 
 
 

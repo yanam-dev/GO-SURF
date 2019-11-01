@@ -28,16 +28,53 @@ $(function(){
         focusOnSelect: true,
         asNavFor: '.surf-slider',
     });
+    $('.travel__slider').slick({
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        prevArrow: '<img class="slider-arrow slider-arrow__left" src="images/icons/arrow-left.svg" alt="Link to...">',
+        nextArrow: '<img class="slider-arrow slider-arrow__right" src="images/icons/arrow-right.svg" alt="Link to...">',
+    });
+    $('.shop__slider').slick({
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        prevArrow: '<img class="slider-arrow slider-arrow__left" src="images/icons/arrow-left.svg" alt="Link to...">',
+        nextArrow: '<img class="slider-arrow slider-arrow__right" src="images/icons/arrow-right.svg" alt="Link to...">',
+    });
 
+
+    $(".rate-star").rateYo({
+        rating: 5,
+        spacing: "10px",
+        ratedFill: "#4AF6CD",
+        starWidth: "22px",
+        readOnly: true,
+    });
+// ANIMATION
+    // $(window).scroll(function() {
+    //     $('.shop-product__image').each(function(){
+    //         var imagePos = $(this).offset().top;
+
+    //         var topOfWindow = $(window).scrollTop();
+    //         if (imagePos > topOfWindow+800) {
+    //             $(this).addClass("surfUpAnimation");
+    //         }
+    //     });
+       
+    // });
 
     wow = new WOW(
         {
-        boxClass:     'wow',      // default
-        animateClass: 'animated', // default
-        offset:       0,          // default
-        mobile:       true,       // default
-        live:         true        // default
+        boxClass:     'wow',
+        animateClass: 'animated', 
+        offset:       0,         
+        mobile:       true,      
+        live:         true   
       }
       )
       wow.init();
+      
 });

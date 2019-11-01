@@ -1,8 +1,10 @@
+
+$green: #4AF6CD;
+
 @mixin f300 {
     font-weight: 300;
     font-family: 'Fira Sans', sans-serif;
 }
-
 @mixin f400 {
     font-weight: 400;
     font-family: 'Fira Sans', sans-serif;
@@ -15,4 +17,5 @@
     font-weight: 800;
     font-family: 'Fira Sans', sans-serif;
 }
-$green: #4AF6CD;
+
+
