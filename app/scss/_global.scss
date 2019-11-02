@@ -200,13 +200,27 @@ button:not(:disabled) {
     @include f800;
     font-size: 40px;
     line-height: 36px;
+    position: relative;
+    z-index: 1;
+    .rectangle-surf{
+        width: 167px;
+        height: 69px;
+        position: absolute;
+        top:0;
+        right: 0;
+        z-index: -1;
+        background-color: $green;
+        animation-duration: 3s;
+        animation-delay: 3s;
+        animation-name: linkAnim;
+        animation-fill-mode: both;
+        transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
     span{
         padding: 17px 57px 16px 17px;
-        background-color: $green;
         display: inline-block;
         position: relative;
         margin-left: 19px;
-        
         &:before{
             content: '';
             position: absolute;
@@ -282,5 +296,33 @@ button:not(:disabled) {
     }
 } 
 
+@keyframes linkAnim{
+    from{
+        background-color: $green;
+    }
+    50%{
+        transform: translateX(-70%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0%);
+        background-color: $green;
+        opacity: 1;
+    }
+}
+@keyframes linkAnimSmall{
+    from{
+        background-color: $green;
+    }
+    50%{
+        transform: translateX(-120%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0%);
+        background-color: $green;
+        opacity: 1;
+    }
+}
 
   

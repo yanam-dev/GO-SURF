@@ -76,10 +76,18 @@
                 </li>
             </ul>
         </nav>
-        <div class="header__search">
+        <div class="header__search" onclick="this.style.display='none'">
             <a href="#">
                 <img src="images/icons/search.svg" alt="Search">
             </a>
+        </div>
+        <div class="header__search-form">
+            <form class="search__form">
+                <input type="text" placeholder="Search..." required>
+                <button type="submit">
+                    <img src="images/icons/search-input.svg" alt="Search">
+                </button>
+            </form>
         </div>
         <div class="header__calendar">
             <div class="header__calendar-date">20</div> 
@@ -213,7 +221,7 @@
 <!-- end header slider section -->
 <div class="container-fluid">
 <!-- start surf section -->
-<section class="surf"> 
+<section class="surf" id="surf"> 
     <div class="v-lines">
         <div class="v-lines__outer"></div>
         <div class="v-lines__inner"></div>
@@ -541,7 +549,10 @@
                     Bubwa<span>|</span> Philippines
                 </h6>
                 <div class="surf__btn-box">
-                    <a class="btn-box__link" href="#">View <span>Surf</span></a>
+                    <a class="btn-box__link" href="#">View 
+                        <div class="rectangle-surf" animation-duration="2s"></div>
+                        <span>Surf</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -554,7 +565,10 @@
                     California <span>|</span> USA
                 </h6>
                 <div class="surf__btn-box">
-                    <a class="btn-box__link" href="#">View <span>Surf</span></a>
+                    <a class="btn-box__link" href="#">View 
+                        <div class="rectangle-surf" animation-duration="3.5s"></div>
+                        <span>Surf</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -567,7 +581,10 @@
                     Hawaiian <span>|</span> Islands
                 </h6>
                 <div class="surf__btn-box">
-                    <a class="btn-box__link" href="#">View <span>Surf</span></a>
+                    <a class="btn-box__link" href="#">View 
+                        <div class="rectangle-surf" animation-duration="5s"></div>
+                        <span>Surf</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -580,7 +597,10 @@
                     Latin <span>|</span> America
                 </h6>
                 <div class="surf__btn-box">
-                    <a class="btn-box__link" href="#">View <span>Surf</span></a>
+                    <a class="btn-box__link" href="#">View 
+                        <div class="rectangle-surf" animation-duration="7.5s"></div>
+                        <span>Surf</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -593,7 +613,10 @@
                    Hossigar <span>|</span> France
                 </h6>
                 <div class="surf__btn-box">
-                    <a class="btn-box__link" href="#">View <span>Surf</span></a>
+                    <a class="btn-box__link" href="#">View 
+                        <div class="rectangle-surf" animation-duration="2s"></div>
+                        <span>Surf</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -606,7 +629,10 @@
                     Bou<span>|</span> Africa
                 </h6>
                 <div class="surf__btn-box">
-                    <a class="btn-box__link" href="#">View <span>Surf</span></a>
+                    <a class="btn-box__link" href="#">View 
+                        <div class="rectangle-surf" animation-duration="3.5s"></div>
+                        <span>Surf</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -619,7 +645,10 @@
                     Mumba <span>|</span> India
                 </h6>
                 <div class="surf__btn-box">
-                    <a class="btn-box__link" href="#">View <span>Surf</span></a>
+                    <a class="btn-box__link" href="#">View 
+                        <div class="rectangle-surf" animation-duration="5s"></div>
+                        <span>Surf</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -632,7 +661,10 @@
                     Queensland <span>|</span> Australia
                 </h6>
                 <div class="surf__btn-box">
-                    <a class="btn-box__link" href="#">View <span>Surf</span></a>
+                    <a class="btn-box__link" href="#">View 
+                        <div class="rectangle-surf" animation-duration="7.5s"></div>
+                        <span>Surf</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -640,7 +672,7 @@
 </section>
 <!--end surf section -->
 <!-- start travel section -->
-<section class="travel" style="background-image: url(images/content/travel-bg.png)"> 
+<section class="travel" id="travel" style="background-image: url(images/content/travel-bg.png)"> 
     <div class="container-fluid">
         <div class="v-lines">
             <div class="v-lines__outer"></div>
@@ -713,7 +745,10 @@
                         </div>
                     </div>
                     <div class="travel-slider__btn">
-                        <a class="btn-box__link" href="#">Book <span>Flight</span></a>
+                        <a class="btn-box__link" href="#">Book 
+                            <div class="rectangle-surf" animation-duration="3s"></div>
+                            <span>Flight</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -776,7 +811,10 @@
                         </div>
                     </div>
                     <div class="travel-slider__btn">
-                        <a class="btn-box__link" href="#">Book <span>Flight</span></a>
+                        <a class="btn-box__link" href="#">Book 
+                            <div class="rectangle-surf" animation-duration="4.5s"></div>
+                            <span>Flight</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -839,7 +877,10 @@
                         </div>
                     </div>
                     <div class="travel-slider__btn">
-                        <a class="btn-box__link" href="#">Book <span>Flight</span></a>
+                        <a class="btn-box__link" href="#">Book 
+                            <div class="rectangle-surf" animation-duration="6s"></div>
+                            <span>Flight</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -902,7 +943,10 @@
                         </div>
                     </div>
                     <div class="travel-slider__btn">
-                        <a class="btn-box__link" href="#">Book <span>Flight</span></a>
+                        <a class="btn-box__link" href="#">Book 
+                            <div class="rectangle-surf" animation-duration="7.5s"></div>
+                            <span>Flight</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -911,7 +955,7 @@
 </section>
 <!--end travel section -->
 <!-- start sleep section -->
-<section class="sleep" style="background-image: url(../images/content/frangipani-big.png)"> 
+<section class="sleep" id="sleep" style="background-image: url(../images/content/frangipani-big.png)"> 
     <div class="v-lines">
         <div class="v-lines__outer"></div>
         <div class="v-lines__inner"></div>
@@ -982,7 +1026,10 @@
                     </div>
                 </div>
                 <div class="travel-slider__btn">
-                    <a class="btn-box__link" href="#">Book <span>Stay</span></a>
+                    <a class="btn-box__link" href="#">Book 
+                        <div class="rectangle-surf" animation-duration="10s"></div>
+                        <span>Stay</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -1044,7 +1091,10 @@
                     </div>
                 </div>
                 <div class="travel-slider__btn">
-                    <a class="btn-box__link" href="#">Book <span>Stay</span></a>
+                    <a class="btn-box__link" href="#">Book 
+                        <div class="rectangle-surf" animation-duration="12s"></div>
+                        <span>Stay</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -1106,7 +1156,10 @@
                     </div>
                 </div>
                 <div class="travel-slider__btn">
-                    <a class="btn-box__link" href="#">Book <span>Stay</span></a>
+                    <a class="btn-box__link" href="#">Book 
+                        <div class="rectangle-surf" animation-duration="14s"></div>
+                        <span>Stay</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -1169,7 +1222,10 @@
                     </div>
                 </div>
                 <div class="travel-slider__btn">
-                    <a class="btn-box__link" href="#">Book <span>Stay</span></a>
+                    <a class="btn-box__link" href="#">Book 
+                        <div class="rectangle-surf" animation-duration="16s"></div>
+                        <span>Stay</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -1177,7 +1233,7 @@
 </section>
 <!--end sleep section -->
 <!-- start shop section -->
- <section class="shop"> 
+ <section class="shop" id="shop"> 
     <div class="v-lines">
         <div class="v-lines__outer"></div>
         <div class="v-lines__inner"></div>
@@ -1204,7 +1260,10 @@
                         <div class="rate-star"></div>
                         <div class="surf__title-price">$799<span>99</span></div>
                         <div class="travel-slider__btn">
-                            <a class="btn-box__link" href="#">Drop <span>In</span></a>
+                            <a class="btn-box__link" href="#">Drop 
+                                <div class="rectangle-surf" animation-duration="5s"></div>
+                                <span>In</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -1250,7 +1309,10 @@
                         <div class="rate-star"></div>
                         <div class="surf__title-price">$799<span>99</span></div>
                         <div class="travel-slider__btn">
-                            <a class="btn-box__link" href="#">Drop <span>In</span></a>
+                            <a class="btn-box__link" href="#">Drop 
+                                <div class="rectangle-surf" animation-duration="12s"></div>
+                                <span>In</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -1296,7 +1358,10 @@
                         <div class="rate-star"></div>
                         <div class="surf__title-price">$799<span>99</span></div>
                         <div class="travel-slider__btn">
-                            <a class="btn-box__link" href="#">Drop <span>In</span></a>
+                            <a class="btn-box__link" href="#">Drop 
+                                <div class="rectangle-surf" animation-duration="14s"></div>
+                                <span>In</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -1342,12 +1407,15 @@
                         <div class="rate-star"></div>
                         <div class="surf__title-price">$799<span>99</span></div>
                         <div class="travel-slider__btn">
-                            <a class="btn-box__link" href="#">Drop <span>In</span></a>
+                            <a class="btn-box__link" href="#">Drop 
+                                <div class="rectangle-surf" animation-duration="18s"></div>
+                                <span>In</span>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="shop__slider-product shop-product">
-                    <div class="shop-product__image animated">
+                    <div class="shop-product__image animated" animation-delay="10s"></div>
                         <img src="images/content/surf-shop.svg" alt="North Nugget TT Surfboard">
                     </div>
                 </div>

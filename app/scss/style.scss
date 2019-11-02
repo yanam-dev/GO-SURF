@@ -122,6 +122,39 @@
         }
     }
 }
+
+.header__search{
+    &-form{
+        max-width: 100%;
+        display: none;
+    }
+}
+
+.search__form{
+    position: relative;
+    button{
+        position: absolute;
+        right: 6px;
+        top: 0;
+        padding: 11px 5px 0;
+        border-radius: 3px;
+    }
+}
+.search__form input {
+    display: inline-block;
+    max-width: 155px;
+    border-radius: 2px;
+    border: none;
+    line-height: 0px;
+    // min-height: 38px;
+    padding: 10px;
+    box-shadow: 0px 1px 10px 0px rgba(255,255,255,0.75);
+    &::placeholder{
+        font-size: 14px;
+        color: #78909c;
+    }
+}
+
 .header__slider{
     &-item{
         height: 100vh;  
@@ -442,6 +475,7 @@
     margin-left: 40px;
     display: none;
 }
+
 // end surf section
 // start travel section
 .travel{
@@ -449,6 +483,10 @@
     background-position: bottom right;
     background-size: auto;
     position: relative;
+    .rectangle-surf{
+        width: 200px;
+        animation-delay: 6s;
+    }
     &__slider{
         .slider-arrow{
         top: 260px;
@@ -569,6 +607,10 @@
         text-align: left;
         margin-top: 0;
     }
+    .rectangle-surf{
+        width: 180px;
+        animation-delay: 6s;
+    }
     .surf__title-name{
         max-width: 480px;
     }
@@ -581,6 +623,10 @@
     }
 }
 .shop__slider{
+    .rectangle-surf{
+        width: 113px;
+        animation-name: linkAnimSmall;
+    }
     .slider-arrow{
         opacity: 0.25;
         top: 0;
